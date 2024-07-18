@@ -1,0 +1,544 @@
+/* font style link  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+:root{
+--orange-color : #E6533C ;
+--para-color : rgb(135, 135, 135) ;
+}
+
+
+
+/* universal selector  */
+*{    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+/* shared style  */
+.orangeBtn{
+    background-color: var(--orange-color);
+    font-weight: 600;
+    color: white;
+    border-radius: 42px;
+    border: none;
+    padding: .9rem 40px;
+}
+
+.allH1{
+    font-size: 48px;
+}
+
+.para{
+    font-size: .8rem;
+    color: var(--para-color);
+    text-align: center;
+}
+
+
+/* header starts  */
+header {
+    padding: 3rem 10rem 5rem;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%) ;
+    height: 100vh;
+}
+
+header > nav{
+display: flex;
+justify-content: space-between;
+}
+
+
+#navMenuIcon{
+    display: none;
+    width: 40px;
+    height: 30px;
+}
+
+header nav h1 {
+    color: var(--orange-color);
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  padding:8px 20px 8px 4px;
+  border-radius: 39px;
+  align-items: center;
+  gap: 3rem;
+  list-style-type: none;
+  text-decoration: none;
+  border: 1px solid var(--para-color);
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    font-weight: 500;
+
+}
+
+#navOrngBtn{
+    padding: 5px 20px;
+}
+
+/* banner section  */
+#bannerSection{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+#bannerSection > div{
+    display:flex ;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+#bannerSection > div > h1 {
+  font-size: 4rem;
+line-height: 5rem;
+}
+
+#dancingFont{
+    font-family: "Dancing Script", cursive;
+    font-size: 6rem;
+    font-weight: normal;
+}
+
+#bannerSection > div > p{
+   text-align: left;
+}
+
+#bannerSection > div > div{
+display: flex;
+gap: 1rem;
+}
+
+#transparentBtn{
+    background:none;
+    border: 2px solid white;
+    
+}
+
+#bannerimgDiv{
+    position: relative;
+}
+
+#bannerSection  img {
+    /* width: 100%;
+    height: 100%; */
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.264);
+width: 230px;
+height: 100px;
+align-items: center;
+justify-content: center;
+gap: 14px;
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#roundDiv{
+    height:2rem;
+    width: 2rem;
+    background-color: var(--orange-color);
+    border-radius: 100%;
+}
+
+.txtDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.txtDiv h1{
+    font-size: 1.5rem;
+}
+
+#secCardH1{
+    font-size: 2rem;
+}
+
+#card1{
+    position: absolute;
+bottom: 10vh;
+}
+
+#card2{
+    position: absolute;
+top: 15vh;
+right: 2vw;
+}
+
+
+/* habit section  */
+#habitSection{
+    padding: 5rem 10rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.habitCard{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#habitSection div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.habitCard img{
+    border-radius: 100%;
+    border: 3px solid rgb(61, 61, 61);
+}
+
+
+/* run section  */
+#runSection{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 5rem 10rem;
+padding: 2rem;
+background-color:#222222;
+border-radius: 20px;
+}
+
+#runImg{
+    display: none;
+}
+
+#runSection div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#runSection div p {
+    text-align: left;
+}
+
+#runSection img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* training Section  */
+#trainingSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 2rem 10rem 5rem;
+}
+
+#trainingSection p {
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.trainingCard{
+    height: 30vh;
+    position: relative;
+}
+
+.trainingCard p{
+    position: absolute;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.5); /* Aqua color with 50% opacity */
+  }
+
+#overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.3); /* Aqua color with 50% opacity */
+  }
+
+#overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.5); /* Aqua color with 50% opacity */
+  }
+
+#overlay4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.5); /* Aqua color with 50% opacity */
+  }
+
+#overlay5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(66, 255, 0, 0.3); /* Aqua color with 50% opacity */
+  }
+
+#overlay6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.5); /* Aqua color with 50% opacity */
+  }
+
+#trainingCardImg1 p{
+    bottom:5vh ;
+    left: 2.5vw;
+    color: black;
+}
+
+#trainingCardImg2 p{
+    top:5vh ;
+    left: 2.5vw;
+}
+
+#trainingCardImg3 p{
+    bottom:5vh ;
+    left: 2.5vw;
+}
+
+#trainingCardImg4 p{
+    bottom:5vh ;
+    left: 2.5vw;
+    color: black;
+}
+
+#trainingCardImg5 p{
+    top:5vh ;
+    left: 2.5vw;
+}
+
+#trainingCardImg6 p{
+    bottom:5vh ;
+    left: 2.5vw;
+}
+
+
+#trainingImgRow1 {
+   display: grid;
+   grid-template-columns: 30% 40% 30%;
+   height: 30vh;
+}
+
+#trainingSection img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+#trainingImgRow2 {
+    display: grid;
+    grid-template-columns:1.2fr .7fr 1.1fr;
+    height: 30vh;
+ }
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+/* paragraph  */
+.orangeBtn{
+    font-weight: 500;
+    border-radius: 42px;
+    padding: .4rem 10px;
+}
+
+/* all h1  */
+.allH1{
+    font-size: 30px;
+}
+
+
+    header {
+        padding: 1rem 1rem;
+        height: auto;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    #navMenuIcon{
+        display: block;
+    }
+
+ /* banner  */
+    #bannerSection{
+        grid-template-columns: 100%;
+        padding: .5rem;
+    }
+    
+    #bannerSection > div{
+        gap: 1rem;
+    }
+    
+    #bannerSection > p{
+       padding-right: 3rem;
+    }
+    
+    #bannerSection > div > h1 {
+      font-size: 2rem;
+    line-height: 2.7rem;
+    }
+    
+    #dancingFont{
+        font-size: 3rem;
+    }
+    
+    #bannerSection > div > div{
+    gap: .6rem;
+    margin: 0 auto;
+    }
+    
+    #bannerSection  img {
+width: 100%;
+    }
+
+    .txtDiv h1 , #secCardH1{
+        font-size: 1rem;
+    }
+
+    .card{
+        padding: 10px 0;
+        backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.264);
+width: 150px;
+    height: 80px;
+    }
+    
+    #card1{
+    bottom:35vh;
+    }
+    
+    #card2{
+    top: 10vh;
+    }
+    
+    
+    /* habit section  */
+    #habitSection{
+        padding: 0 1rem 1rem;
+        gap: .7rem;
+        
+    }
+    
+    #habitSection div {
+flex-direction: column;
+    }
+
+   
+    /* run section  */
+#runSection{
+    grid-template-columns: 1fr;
+    margin:2rem 1rem;
+padding: 1.3rem;
+
+}
+
+#runImg{
+    display: block;
+    margin-top: 2rem;
+}
+
+#runImgLgDevice{
+    display: none;
+}
+
+#runSection br {
+    display: none;
+}
+
+#runSection div h1{
+margin-right: 2rem;
+}
+
+#runSection div button {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
