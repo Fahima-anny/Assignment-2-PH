@@ -31,7 +31,7 @@ body{
     color: white;
     border-radius: 42px;
     border: none;
-    padding: .9rem 40px;
+    padding: 10px 60px;
 }
 
 .allH1{
@@ -279,92 +279,71 @@ border-radius: 20px;
 .trainingCard p{
     position: absolute;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
+}
+
+#overlay1,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #overlay1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 255, 255, 0.5); /* Aqua color with 50% opacity */
+    background-color: rgba(0, 255, 255, 0.5);
   }
 
 #overlay2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.3); /* Aqua color with 50% opacity */
+    background-color: rgba(255, 0, 0, 0.3);
   }
 
 #overlay3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:  rgba(0, 0, 0, 0.5); /* Aqua color with 50% opacity */
+    background-color:  rgba(0, 0, 0, 0.5);
   }
 
 #overlay4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:  rgba(0, 0, 0, 0.5); /* Aqua color with 50% opacity */
+    background-color:  rgba(0, 0, 0, 0.5); 
   }
 
 #overlay5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(66, 255, 0, 0.3); /* Aqua color with 50% opacity */
+    background-color: rgba(66, 255, 0, 0.3); 
   }
 
 #overlay6 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:  rgba(0, 0, 0, 0.5); /* Aqua color with 50% opacity */
+    background-color:  rgba(0, 71, 255, 0.3); 
   }
 
 #trainingCardImg1 p{
     bottom:5vh ;
     left: 2.5vw;
     color: black;
+    font-weight: 700;
 }
 
 #trainingCardImg2 p{
-    top:5vh ;
+    top:2vh ;
     left: 2.5vw;
 }
 
 #trainingCardImg3 p{
-    bottom:5vh ;
+    bottom:1vh ;
     left: 2.5vw;
 }
 
 #trainingCardImg4 p{
-    bottom:5vh ;
-    left: 2.5vw;
-    color: black;
+    top:1vh ;
+    right: 3vh;
+    color: rgb(255, 255, 255);
 }
 
 #trainingCardImg5 p{
-    top:5vh ;
+    bottom:0 ;
     left: 2.5vw;
 }
 
 #trainingCardImg6 p{
-    bottom:5vh ;
+    bottom:0;
     left: 2.5vw;
 }
 
@@ -386,6 +365,98 @@ border-radius: 20px;
     grid-template-columns:1.2fr .7fr 1.1fr;
     height: 30vh;
  }
+
+/* bmi calculate div  */
+#bmiSection{
+    margin: 1rem 0 5rem;
+    text-align: left;
+}
+
+#bmiTitleDiv{
+width: 50%;
+margin: 0 auto;
+}
+
+#bmiTitleDiv > p  {
+text-align: left;
+margin-bottom: 4rem;
+}
+
+#bmiCalculator > p{
+    text-align: left;
+margin-bottom: 1.5rem;
+}
+
+#bmiCalculateDiv{
+    background-color: #222222;
+    padding: 50px 10rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 45% calc(55% - 1rem);
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bmiCalculateDiv table {
+    margin-top: 2rem;
+}
+
+#bmiCalculateDiv table th{
+    font-weight: 500;
+}
+
+#bmiCalculateDiv table td {
+   font-weight: 400;
+   color: var(--para-color);
+   font-size: .9rem;
+}
+
+#bmiCalculateDiv table th,td {
+    padding:.6rem 1.7rem;
+}
+
+#bmiCalculateDiv table , th,td {
+    border: 1px solid #393939;
+    border-collapse: collapse;
+}
+
+
+#bmiCalculator form{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: .7rem;
+    margin-bottom: 1.5rem;
+}
+
+#activityFactor{
+    grid-column: span 2;
+}
+
+input , select {
+    background-color: #393939;
+    border-radius: 8px;
+    border: none;
+    padding: 12px 20px;
+    font-size:1rem ;
+    color: var(--para-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -498,14 +569,6 @@ padding: 1.3rem;
     margin-top: 2rem;
 }
 
-#runImgLgDevice{
-    display: none;
-}
-
-#runSection br {
-    display: none;
-}
-
 #runSection div h1{
 margin-right: 2rem;
 }
@@ -513,6 +576,80 @@ margin-right: 2rem;
 #runSection div button {
     width: 100%;
 }
+
+
+/* tarining section  */
+
+#trainingSection{
+    align-items: baseline;
+    padding: 2rem 1rem;
+}
+
+#trainingCardImg3 ,#trainingCardImg6 , #trainingSection >p >br , #runSection br , #runImgLgDevice {
+    display: none;
+}
+
+.trainingCard{
+    height: 15vh;
+}
+
+#trainingImgRow1 , #trainingImgRow2 {
+    grid-template-columns: 50% 50%;
+    height: 15vh;
+ }
+
+ #trainingSection img {
+    height: 15vh;
+}
+
+
+/* bmi calculate div  */
+#bmiSection{
+    margin: 1rem 0;
+}
+
+#bmiTitleDiv{
+width: 100%;
+}
+
+#bmiTitleDiv > p  {
+margin-bottom: 2rem;
+}
+
+#bmiCalculator > p{
+margin-bottom: 1.5rem;
+}
+
+#bmiCalculateDiv{
+    padding:1rem;
+    gap: 2rem;
+    grid-template-columns:1fr;
+}
+
+#bmiCalculateDiv table th,td {
+    padding:.5rem 1rem;
+}
+
+#bmiCalculator form{
+    grid-template-columns:repeat(2,1fr);
+    gap: .7rem;
+    margin-bottom: 1.5rem;
+}
+
+#activityFactor{
+    grid-column: span 2;
+}
+
+input , select {
+    background-color: #393939;
+    border-radius: 8px;
+    border: none;
+    padding: 12px 20px;
+    font-size:1rem ;
+    color: var(--para-color);
+}
+
+
 
 
 
