@@ -232,7 +232,7 @@ right: 2vw;
 #runSection{
     display: grid;
     grid-template-columns: 60% 40%;
-    margin: 5rem 10rem;
+    margin: 0rem 10rem 5rem;
 padding: 2rem;
 background-color:var(--darkGray);
 border-radius: 20px;
@@ -658,8 +658,16 @@ padding: .7rem 1rem ;
 }
 
     header {
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
         height: auto;
+    }
+
+    header nav {
+        margin-bottom: 1rem;
+    }
+     
+    header nav h1{
+       font-size: 2rem;
     }
 
     header ul {
@@ -668,12 +676,14 @@ padding: .7rem 1rem ;
 
     #navMenuIcon{
         display: block;
+        width: 30px;
+        height: 20px;
     }
 
  /* banner  */
     #bannerSection{
         grid-template-columns: 100%;
-        padding: .5rem;
+        padding: .5rem 0;
     }
     
     #bannerSection > div{
@@ -891,8 +901,12 @@ footer > div {
     display: none;
 }
 
-#packageSection {
+#packageSection{
+    margin:3rem 1rem 1rem;
+}
 
+#packageSection > div{
+    grid-template-columns: repeat(1 , 1fr);
 }
 
 
