@@ -82,7 +82,7 @@ header ul {
   gap: 3rem;
   list-style-type: none;
   text-decoration: none;
-  border: 1px solid var(--para-color);
+  border: 1px solid var(--lightGray);
 }
 
 header nav ul li a{
