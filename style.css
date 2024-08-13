@@ -170,6 +170,14 @@ border: 1px solid #ffffff1a;
     border-radius: 100%;
 }
 
+#playIcon img{
+display: none;
+}
+
+/* #playBtn > img{
+width:50px;
+} */
+
 .txtDiv{
     display: flex;
     flex-direction: column;
@@ -441,6 +449,25 @@ margin-bottom: 1.5rem;
     grid-column: span 2;
 }
 
+#sexSelect{
+    background-color: var(--lightGray);
+    border-radius: 8px;
+    border: none;
+    padding: 0 20px 0 0;
+    font-size:1rem ;
+    color: var(--para-color);
+    width: 100%;
+}
+
+#activitySelect{
+    background-color: var(--lightGray);
+    border-radius: 8px;
+    border: none;
+    padding: 0 20px 0 0;
+    width: 205%;
+}
+
+
 input , select {
     background-color: var(--lightGray);
     border-radius: 8px;
@@ -448,11 +475,12 @@ input , select {
     padding: 2vh 20px;
     font-size:1rem ;
     color: var(--para-color);
+    width: 100%;
 }
 
 /* team section  */
 #teamSection{
-    padding: 5rem 10rem;
+    padding: 0rem 10rem 5rem;
     text-align: center;
 }
 
@@ -499,55 +527,10 @@ background-blend-mode: overlay;
     text-align: left;
 }
 
-/* footer  */
-footer {
-    padding: 3rem 10rem;
-    background-color: var(--darkGray);
-}
-
-footer > div {
-    display: grid;
-    grid-template-columns: 50%  30% 20%; 
-}
-
-#footerTxtDiv > .para {
-    text-align: left;
-    padding-right: 8vw;
-    margin-top: 1.5rem;
-}
-
-#footerTxtDiv > h1{
-font-style: italic;
-color: var(--orange-color);
-font-size: 4rem;
-}
-
-footer ul {
-    list-style-type: none;
-}
-
-footer ul li{
-    margin-top: 1.4rem;
-    font-size: 1.35rem;
-    color: var(--para-color);
-    font-weight: 500;
-}
-
-
-footer hr {
-    opacity: 15%;
-    margin: 3rem 0 2rem 0;
-}
-
-#reserved {
-    color: var(--para-color);
-    font-size: 1.2rem;
-    text-align: center;
-}
 
 /* package Section start  */
 #packageSection{
-    margin: 5rem 10rem 0 ;
+    margin: 1rem 10rem 7rem ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -624,6 +607,54 @@ padding: .7rem 1rem ;
     color: white;
     border-radius: 12px;
     /* border: 1px solid rgb(255, 255, 255); */
+}
+
+
+
+/* footer  */
+footer {
+    padding: 3rem 10rem;
+    background-color: var(--darkGray);
+}
+
+footer > div {
+    display: grid;
+    grid-template-columns: 50%  30% 20%; 
+}
+
+#footerTxtDiv > .para {
+    text-align: left;
+    padding-right: 8vw;
+    margin-top: 1.5rem;
+}
+
+#footerTxtDiv > h1{
+font-style: italic;
+color: var(--orange-color);
+font-size: 4rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li{
+    margin-top: 1.4rem;
+    font-size: 1.35rem;
+    color: var(--para-color);
+    font-weight: 500;
+}
+
+
+footer hr {
+    opacity: 15%;
+    margin: 3rem 0 2rem 0;
+}
+
+#reserved {
+    color: var(--para-color);
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 
@@ -714,6 +745,11 @@ padding: .7rem 1rem ;
     
     #bannerSection  img {
 width: 100%;
+    }
+
+    #playIcon img{
+        padding: 10px;
+        display: block;
     }
 
     .txtDiv h1 , #secCardH1{
@@ -849,9 +885,13 @@ margin-bottom: 1.5rem;
     grid-column: span 2;
 }
 
-input , select {
+input  {
     padding: 12px 20px;
     width: 100%;
+}
+
+#activitySelect{
+    width: 206%;
 }
 
 #bmiCalculator > button {
@@ -881,21 +921,6 @@ padding: .6rem 3.4rem;
     order:4 ;
 }
 
-/* footer  */
-footer {
-    padding: 3rem 1rem;
-}
-
-footer > div {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 3rem;
-}
-
-#reserved {
-    text-align: left;
-}
-
 /* package Section  */
 #packageSection br {
     display: none;
@@ -910,6 +935,22 @@ footer > div {
 }
 
 
+
+/* footer  */
+footer {
+    margin-top: 4rem;
+    padding: 3rem 1rem;
+}
+
+footer > div {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 3rem;
+}
+
+#reserved {
+    text-align: left;
+}
 
 
 
